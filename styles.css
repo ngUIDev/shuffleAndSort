@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #333333;
+}
+
+footer {
+    background: #efefef;
+    font-style: italic;
+}
+
+main {
+    background: #efefef;
+    display: flex;
+    border-top: 5px solid #ccc;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 68%;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    padding: 35px 0;
+    font-size: 6vw;
+    color: #fff;
+    width: calc(100%/3);
+}
+
+.item-1,
+.item-8 {
+    background: #6f98a8;
+}
+
+.item-2,
+.item-4 {
+    background: #2b8ead;
+}
+
+.item-3,
+.item-5,
+.item-9 {
+    background: #2f454e;
+}
+
+.item-6,
+.item-7 {
+    background: #bfbfbf;
+
+}
+
+.btn-group {
+    width: 30%;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.btn-group button {
+    background: #72c3dc;
+    border: 1px solid #2b8ead;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #2b8ead;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 25px;
+    transition: All 250ms ease;
+    max-width: 240px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:active {
+    top: 5px;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        background: #333;
+        color: #bfbfbf;
+        padding: 15px 0;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        background: transparent;
+    }   
+
+    ul {
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        background: transparent;
+    }
+
+    ul li {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
+        color: #333;
+        padding: 15px 0;
+    }
+
+    .btn-group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 23px;
+    }
+
+    .btn-group button {
+        margin: 0;
+        max-width: 25%;
+        font-size: 14px;
+    }
+
+    .btn-group button:first-child {
+        margin-right: 0.5rem;
+    }
+
+    .btn-group button:last-child {
+        margin-left: 0.5rem;
+    }
+
+    .item-1,
+    .item-8 {
+        background: #efefef;
+        border-left: 5px solid #6f98a8;
+    }
+
+    .item-2,
+    .item-4 {
+        border-left: 5px solid #2b8ead;
+        background: #efefef;
+    }
+
+    .item-3,
+    .item-5,
+    .item-9 {
+        border-left: 5px solid #2f454e;
+        background: #efefef;
+    }
+
+    .item-6,
+    .item-7 {
+        border-left: 5px solid #bfbfbf;
+        background: #efefef;
+    }
+
+    footer {
+        background: transparent;
+    }
+}
